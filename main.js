@@ -40,4 +40,21 @@ for (var key in student) {
     console.log("Nome: " + students[i].name + ", Cognome: " + students[i].surname);
   } 
 
-  l
+  let newName = prompt("inserisci un nuovo nome per un nuovo studente:");
+  let newSurname = prompt("inserisci anche il cognome ");
+  let newAge = parseInt(prompt("inserisci la sua eta'"));
+
+  let newStudent ={
+    name: newName,
+    surname: newSurname,
+    age: newAge
+  }
+
+
+  students.push(newStudent);
+
+  
+  for (let i = 0; i < students.length; i++) {
+    console.log("Nome: " + students[i].name + ", Cognome: " + students[i].surname);
+  } 
+

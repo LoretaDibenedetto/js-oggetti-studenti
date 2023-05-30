@@ -35,10 +35,7 @@ for (var key in student) {
     }
   ];
   
-  // Ciclo per stampare nome e cognome di ogni studente
-  for (let i = 0; i < students.length; i++) {
-    console.log("Nome: " + students[i].name + ", Cognome: " + students[i].surname);
-  } 
+  stampArrayObj(students);
 
   let newName = prompt("inserisci un nuovo nome per un nuovo studente:");
   let newSurname = prompt("inserisci anche il cognome ");
@@ -53,8 +50,22 @@ for (var key in student) {
 
   students.push(newStudent);
 
-  
-  for (let i = 0; i < students.length; i++) {
-    console.log("Nome: " + students[i].name + ", Cognome: " + students[i].surname);
-  } 
+  stampArrayObj(students);
 
+
+
+
+
+
+
+
+
+
+
+
+
+  function stampArrayObj(array){
+  for (let i = 0; i < array.length; i++) {
+    console.log("Nome: " + array[i].name + ", Cognome: " + array[i].surname + ", eta':" + array[i].age);
+  } 
+}
